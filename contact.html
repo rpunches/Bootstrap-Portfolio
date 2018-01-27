@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <style>
+        h2,
+        .h6 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        hr {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+    </style>
+</head>
+
+<body style="background-color:lightgrey">
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-md justify-content-center">
+        <div class="container" style="background-color: #ffffff; width:100%">
+            <div class="navbar-header">
+                <class="navbar-brand" class="active" a href="#">
+                    <h2 style="background-color: teal; color: white; margin-bottom:0; padding:20px">Rachel McDermott</h2>
+                    </a>
+            </div>
+            <!-- End Nav Bar -->
+
+            <!--Menu Items-->
+            <span class="nav navbar-inline">
+                <a class="nav-link active" href="index.html;">About</a>
+                <a class="nav-link active" href="portfolio.html;">Portfolio</a>
+                <a class="nav-link active" href="contact.html;">Contact</a>
+            </span>
+        </div>
+    </nav>
+    <!-- End Menu Items -->
+
+    <!--Contact Form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="background-color: #ffffff; margin-top: 20px; padding: 20px">
+                <h2 style="color: teal; margin-bottom:5px">Contact</h2>
+                <hr>
+                <div class="form-area">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                            <div class="form-group">
+                                <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                <span class="help-block">
+                                    <p id="characterLeft" class="help-block ">You have reached the limit</p>
+                                </span>
+                            </div>
+                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact Form -->
+
+            <!--Connect Box-->
+            <div class="card-column" style="background-color: #ffffff; margin: 20px; padding:20px; fixed-top; height: fit-content;">
+                <div class="card-header h6" style="color: teal;">Connect with Me</h6>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto" style="margin-top: 10px;">
+                        <i class="fab fa-github fa-3x" style="color:black;"></i>
+                        <i class="fab fa-linkedin fa-3x" style="color: rgb(0, 110, 255)"></i>
+                        <i class="fas fa-envelope-square fa-3x" style="color:darkorange;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Connect Box -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid fixed-bottom" style="background-color:rgb(41, 41, 41); height: 65px; width:100%; padding:20px;"
+                ;>
+                <h5 style="color: white;" ;>© 2018 Rachel McDermott</h3>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>

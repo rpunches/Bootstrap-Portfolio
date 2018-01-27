@@ -2,87 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-  <style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <style>
+        h2,
+        .h6 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
 
-@media (min-width: 1200px) {
-    .container {
-    max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px){
-    .col-md-6{
-    max-width: 650px;
-    }
-}
-
-h2,h6{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
- }
- 
-hr { 
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-} 
-  </style>
+        hr {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+    </style>
 </head>
 
 <body style="background-color:lightgrey">
-<!--Nav Bar-->  
-    <nav class="navbar navbar-inverse">
-    <div class="container" style= "background-color: #ffffff;">
-        <div class="navbar-header">
-        <class="navbar-brand" class="disabled" a href="#">
-          <h2 style="background-color: teal; color: white; margin-bottom:0; padding:20px">Rachel McDermott</h2>
-          </a>
-          </div>
-      <!--Menu Items-->      
-      <ul class="nav navbar-nav">
-        <class="disabled" a href="#" style="padding: 10px;">About</a>
-          <class="disabled" a href="#" style="padding: 10px;">Portfolio</a>
-            <class="disabled" a href="#" style="padding: 10px;">Contact</a>
-      </ul>
-        </div>
-  </nav>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-md justify-content-center">
+        <div class="container" style="background-color: #ffffff; width:100%">
+            <div class="navbar-header">
+                <class="navbar-brand" class="active" a href="#">
+                    <h2 style="background-color: teal; color: white; margin-bottom:0; padding:20px">Rachel McDermott</h2>
+                    </a>
+            </div>
+            <!-- End Nav Bar -->
 
-<div class="container">
-    <div class="row">
-        <!--About Me-->
-        <div class="col-md-8" style="background-color: #ffffff; margin-top: 20px; padding: 20px">
-            <h2 style="color: teal; margin-bottom:5px">About Me</h2>
-            <hr>
-            <img src="images/workwillow.jpg" alt="Willow at work" class="img-thumbnail float-left" style="width:200px; margin-right:20px">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!--Menu Items-->
+            <span class="nav navbar-inline">
+                <a class="nav-link active" href="index.html;">About</a>
+                <a class="nav-link active" href="portfolio.html;">Portfolio</a>
+                <a class="nav-link active" href="contact.html;">Contact</a>
+            </span>
         </div>
-        <!--Connect Box-->
-        <div class="col-md-2.5" style="background-color: #ffffff; margin: 20px; padding:20px">
-            <h6 style="color: teal;">Connect with Me</h6>
-            <hr>
-            <div class="row justify-content-left">
-                <div class="col-sm-12">
-                    <i class="fab fa-github fa-3x" style="color:black; "></i>              
-                    <i class="fab fa-linkedin fa-3x" style="color: rgb(0, 110, 255)"></i>      
-                    <i class="fas fa-envelope-square fa-3x" style="color:darkorange; "></i>
+    </nav>
+    <!-- End Menu Items -->
+
+    <!--About Me-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="background-color: #ffffff; margin-top: 20px; padding: 20px">
+                <h2 style="color: teal; margin-bottom:5px">About Me</h2>
+                <hr>
+                <img src="images/workwillow.jpg" alt="Willow at work" class="img-thumbnail float-left" style="width:200px; margin-right:20px">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- End About Me -->
+
+            <!--Connect Box-->
+            <div class="card-column" style="background-color: #ffffff; margin: 20px; padding:20px; fixed-top; height: fit-content;">
+                <div class="card-header h6" style="color: teal;">Connect with Me</h6>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-auto" style="margin-top: 10px;">
+                        <i class="fab fa-github fa-3x" style="color:black;"></i>
+                        <i class="fab fa-linkedin fa-3x" style="color: rgb(0, 110, 255)"></i>
+                        <i class="fas fa-envelope-square fa-3x" style="color:darkorange;"></i>
+                    </div>
                 </div>
             </div>
-       </div>
-</div>  
+        </div>
+    </div>
+    <!-- End Connect Box -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid fixed-bottom" style="background-color:rgb(41, 41, 41); height: 65px; width:100%; padding:20px;"
+                ;>
+                <h5 style="color: white;" ;>© 2018 Rachel McDermott</h3>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
 </body>
 
 </html>
