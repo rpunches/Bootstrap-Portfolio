@@ -5,102 +5,83 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Portfolio</title>
+    <title>Portfolio Page</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        h2,
-        .h6 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: bold;
-        }
-
-        hr {
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            border-style: inset;
-            border-width: 1px;
-        }
-
-        .portfolio {
-            position: relative;
-        }
+     
     </style>
 </head>
 
 <body style="background-color:lightgrey">
 
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-md justify-content-center">
-        <div class="container" style="background-color: #ffffff; width:100%">
-            <div class="navbar-header">
-                <class="navbar-brand" class="active" a href="#">
-                    <h2 style="background-color: teal; color: white; margin-bottom:0; padding:20px">Rachel McDermott</h2>
-                    </a>
-            </div>
-            <!-- End Nav Bar -->
-
-            <!--Menu Items-->
-            <span class="nav navbar-inline">
-                <a class="nav-link active" href="index.html;">About</a>
-                <a class="nav-link active" href="portfolio.html;">Portfolio</a>
-                <a class="nav-link active" href="contact.html;">Contact</a>
-            </span>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Rachel McDermott</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </nav>
-    <!-- End Menu Items -->
+    </header>
+    <!-- End Nav Bar -->
 
     <!--Images-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8" style="background-color: #ffffff; margin-top: 20px; padding: 20px">
-                <h2 style="color: teal; margin-bottom:5px">About Me</h2>
-                <hr>
-                <img src="images/workwillow.jpg" alt="Willow at work" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/tonks.jpg" alt="Tonks" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/Mus.jpg" alt="Optimus" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/firstdance.jpg" alt="Our First Dance" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/basecamp.jpg" alt="Everest BaseCamp" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/edog.jpg" alt="Dog on Everest" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/dbuilding.jpg" alt="Disney Building" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/groupshot.jpg" alt="Group Shot with Iraqi Army" class="img-thumbnail float-center" style="width:210px;">
-                <img src="images/hett.jpg" alt="Hett LineUp" class="img-thumbnail float-center" style="width:210px;">
-            </div>
-            <!-- End Images -->
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Portfolio</h1>
 
-            <!--Connect Box-->
-            <div class="card-column" style="background-color: #ffffff; margin: 20px; padding:20px; fixed-top; height: fit-content;">
-                <div class="card-header h6" style="color: teal;">Connect with Me</h6>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-auto" style="margin-top: 10px;">
-                        <i class="fab fa-github fa-3x" style="color:black;"></i>
-                        <i class="fab fa-linkedin fa-3x" style="color: rgb(0, 110, 255)"></i>
-                        <i class="fas fa-envelope-square fa-3x" style="color:darkorange;"></i>
-                    </div>
-                </div>
+                <div class="work">
+                <a href="https://rpunches.github.io/Psychic-Game/"><img src="images/crystal ball.png" alt="Psychic Game" style= "width:100%"></a>
+                
+
+                <h3>Psychic Game</h3>
             </div>
-        </div>
+            <div class="work">
+                <img src="images/placeholder.png" alt="Portfolio Item">
+
+                <h3>Portfolio Item</h3>
+            </div>
+            <div class="work">
+                <img src="images/placeholder.png" alt=Portfolio Item">
+
+                <h3>Portfolio Item</h3>
+            </div>
+            <div class="work">
+                <img src="images/placeholder.png" alt="Portfolio Item">
+
+                <h3>Portfolio Item</h3>
+            </div>
+
+        </section>
+
+        <!-- End Images -->
+
+        <!--Connect Box-->
+        <section class="sidebar">
+            <div id="connect">
+                <h2>Connect with Me</h2>
+
+                <a href="#">
+                    <i class="fab fa-github fa-3x" style="color:black;"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin fa-3x" style="color: rgb(0, 110, 255)"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope-square fa-3x" style="color:darkorange;"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    </div>
     </div>
     <!-- End Connect Box -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <div class="container-fluid fixed-bottom" style="background-color:rgb(41, 41, 41); height: 65px; width:100%; padding:20px;"
-                ;>
-                <h5 style="color: white;" ;>© 2018 Rachel McDermott</h3>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
     <!-- Footer -->
     <footer>
         <div class="footer">
